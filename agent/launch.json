@@ -1,0 +1,7 @@
+{
+  "command": "node",
+  "args": ["agent/server.mjs"],
+  "ready_port": 8899,
+  "ready_path": "/api/health",
+  "note": "AgentCanvas 本地图形设计与排版引擎 Agent API 服务，默认端口 8899"
+}
