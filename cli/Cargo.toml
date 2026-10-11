@@ -1,0 +1,15 @@
+[package]
+name = "agentcanvas-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "AgentCanvas headless entry point: RPC one-shot, MCP stdio server, local HTTP API"
+
+[[bin]]
+name = "agentcanvas"
+path = "src/main.rs"
+
+[dependencies]
+agentcanvas-core = { path = "../core" }
+serde_json = "1"
+base64 = "0.22"

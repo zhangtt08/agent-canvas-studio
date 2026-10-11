@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.1.0",
+  "project_id": "editorial-cover",
+  "revision": 2,
+  "name": "editorial-cover",
+  "tokens": {},
+  "assets": [
+    {
+      "id": "as_5waov6u",
+      "name": "product-b",
+      "uri": "assets/30b368b0.png",
+      "mime": "image/png",
+      "width": 720.0,
+      "height": 960.0,
+      "bytes": 75198,
+      "sha256": "30b368b00eb4cb27c66ada9f6bc81e799ad0102463b3a2662c9899e13aa27287",
+      "alpha": false,
+      "kind": "raster",
+      "source": "copy",
+      "palette": [
+        "#f3f0ec",
+        "#32c0bf",
+        "#c8a39f",
+        "#282a39",
+        "#4e424e",
+        "#4b3986"
+      ],
+      "orientation": "portrait"
+    }
+  ],
+  "artboards": [
+    {
+      "id": "b1",
+      "name": "editorial-cover",
+      "width": 1200.0,
+      "height": 1600.0,
+      "background": {
+        "t": "solid",
+        "color": "#F7F5F1"
+      },
+      "visible": true,
+      "layers": [
+        "te_5wax86e",
+        "im_5wabr3a",
+        "te_5wb67cm",
+        "te_5wbkp9i",
+        "li_5wdf5iu"
+      ],
+      "ratio": "1200:1600"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "te_5wax86e",
+      "type": "text",
+      "name": "masthead",
+      "artboard": "b1",
+      "box": {
+        "x": 382.96,
+        "y": 60.0,
+        "w": 434.09,
+        "h": 513.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin": 60.0
+        },
+        "provenance": [
+          "hug.w=434.09",
+          "hug.h=513",
+          "anchor=top"
+        ]
+      },
+      "text": {
+        "content": "REVIEW",
+        "size": 190.0,
+        "weight": 900,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "REVI",
+          "EW"
+        ]
+      }
+    },
+    {
+      "id": "im_5wabr3a",
+      "type": "image",
+      "name": "subject",
+      "artboard": "b1",
+      "box": {
+        "x": 170.0,
+        "y": 226.67,
+        "w": 860.0,
+        "h": 1146.67
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "b1",
+          "keep_aspect_ratio": true
+        },
+        "provenance": [
+          "aspect=0.75",
+          "center_in=b1"
+        ]
+      },
+      "image": {
+        "asset": "as_5waov6u",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "te_5wb67cm",
+      "type": "text",
+      "name": "coverline",
+      "artboard": "b1",
+      "box": {
+        "x": 378.0,
+        "y": 1413.34,
+        "w": 444.0,
+        "h": 99.9
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "gap": 40.0,
+          "below": {
+            "of": "subject"
+          },
+          "align_x": "center"
+        },
+        "provenance": [
+          "hug.w=444",
+          "hug.h=99.9",
+          "below:subject+40",
+          "align_x=Center"
+        ]
+      },
+      "text": {
+        "content": "设计的秩序感",
+        "size": 74.0,
+        "weight": 400,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "设计的秩序感"
+        ]
+      }
+    },
+    {
+      "id": "te_5wbkp9i",
+      "type": "text",
+      "name": "deck",
+      "artboard": "b1",
+      "box": {
+        "x": 405.0,
+        "y": 1529.24,
+        "w": 390.0,
+        "h": 35.1
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "gap": 16.0,
+          "below": {
+            "of": "coverline"
+          },
+          "align_x": "center"
+        },
+        "provenance": [
+          "hug.w=390",
+          "hug.h=35.1",
+          "below:coverline+16",
+          "align_x=Center"
+        ]
+      },
+      "text": {
+        "content": "十二位设计师谈留白、层级与节奏",
+        "size": 26.0,
+        "weight": 400,
+        "color": "#6B7280",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "十二位设计师谈留白、层级与节奏"
+        ]
+      }
+    },
+    {
+      "id": "li_5wdf5iu",
+      "type": "line",
+      "name": "rule",
+      "artboard": "b1",
+      "box": {
+        "x": 100.0,
+        "y": -358.0,
+        "w": 1000.0,
+        "h": 400.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "gap": 18.0,
+          "above": {
+            "of": "masthead"
+          },
+          "align_x": "center"
+        },
+        "provenance": [
+          "above:masthead",
+          "align_x=Center"
+        ]
+      },
+      "style": {
+        "stroke": {
+          "color": "#1C1C1C",
+          "width": 2.0
+        }
+      },
+      "vector": {}
+    }
+  ],
+  "meta": {
+    "created_at": "2026-10-11 10:33",
+    "updated_at": "2026-10-11 10:33",
+    "origin": "cli"
+  }
+}

@@ -1,0 +1,20 @@
+[package]
+name = "agentcanvas-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "AgentCanvas desktop app (Tauri, frameless, liquid glass)"
+
+[[bin]]
+name = "agentcanvas-app"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+agentcanvas-core = { path = "../core" }
+serde_json = "1"

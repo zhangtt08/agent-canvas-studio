@@ -1,0 +1,13 @@
+# This machine has no Windows SDK, and Git Bash's `link.exe` shadows MSVC's
+# linker, so the msvc host toolchain cannot link anything. Build with the GNU
+# toolchain and this mingw-w64 gcc instead. `rust-toolchain.toml` selects the
+# toolchain; the explicit linker path keeps the build working even when
+# C:\Users\EDY\tools\mingw64\bin is not on PATH.
+[build]
+target = "x86_64-pc-windows-gnu"
+
+[target.x86_64-pc-windows-gnu]
+linker = "C:/Users/EDY/tools/mingw64/bin/gcc.exe"
+
+[net]
+retry = 3

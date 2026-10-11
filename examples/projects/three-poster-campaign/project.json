@@ -1,0 +1,818 @@
+{
+  "schema_version": "1.1.0",
+  "project_id": "three-poster-campaign",
+  "revision": 3,
+  "name": "three-poster-campaign",
+  "tokens": {},
+  "assets": [
+    {
+      "id": "as_5wattpy",
+      "name": "product-a",
+      "uri": "assets/834d0451.png",
+      "mime": "image/png",
+      "width": 720.0,
+      "height": 960.0,
+      "bytes": 77940,
+      "sha256": "834d04512dba423b6e3626f141fc2341cc070189c017c47673149d5faa07178f",
+      "alpha": false,
+      "kind": "raster",
+      "source": "copy",
+      "palette": [
+        "#f3f1ed",
+        "#273367",
+        "#647bb0",
+        "#00fefa",
+        "#35bdf4",
+        "#e0e1e4"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "as_5v97cmu",
+      "name": "product-b",
+      "uri": "assets/30b368b0.png",
+      "mime": "image/png",
+      "width": 720.0,
+      "height": 960.0,
+      "bytes": 75198,
+      "sha256": "30b368b00eb4cb27c66ada9f6bc81e799ad0102463b3a2662c9899e13aa27287",
+      "alpha": false,
+      "kind": "raster",
+      "source": "copy",
+      "palette": [
+        "#f3f0ec",
+        "#32c0bf",
+        "#c8a39f",
+        "#282a39",
+        "#4e424e",
+        "#4b3986"
+      ],
+      "orientation": "portrait"
+    },
+    {
+      "id": "as_5wb2rv6",
+      "name": "product-c",
+      "uri": "assets/d3b72f08.png",
+      "mime": "image/png",
+      "width": 720.0,
+      "height": 960.0,
+      "bytes": 67125,
+      "sha256": "d3b72f08de6e3d894a29c703266b192e7b31f9f9b3b8e9e59037d31645e74573",
+      "alpha": false,
+      "kind": "raster",
+      "source": "copy",
+      "palette": [
+        "#f3f1ed",
+        "#14c8c7",
+        "#1e2d3b",
+        "#254873",
+        "#3e908b",
+        "#bdd9d2"
+      ],
+      "orientation": "portrait"
+    }
+  ],
+  "artboards": [
+    {
+      "id": "b1",
+      "name": "three-poster-campaign",
+      "width": 1080.0,
+      "height": 1440.0,
+      "visible": true,
+      "layers": [
+        "te_5wawf8m",
+        "im_5v99y5i",
+        "re_5wb5eeu",
+        "te_5wbixbq"
+      ],
+      "ratio": "1080:1440"
+    },
+    {
+      "id": "b_5waoxzq",
+      "name": "three-poster-campaign v0",
+      "width": 1080.0,
+      "height": 1440.0,
+      "visible": true,
+      "layers": [
+        "t_5v92gwm-0",
+        "t_5v92gwm-1",
+        "t_5v92gwm-2",
+        "t_5v92gwm-3"
+      ],
+      "ratio": "1080:1440",
+      "vars": {
+        "template": {
+          "name": "variants",
+          "vars": []
+        }
+      }
+    },
+    {
+      "id": "b_5wbxv5y",
+      "name": "three-poster-campaign v1",
+      "width": 1080.0,
+      "height": 1440.0,
+      "visible": true,
+      "layers": [
+        "t_5wbbe2u-0",
+        "t_5wbbe2u-1",
+        "t_5wbbe2u-2",
+        "t_5wbbe2u-3"
+      ],
+      "ratio": "1080:1440",
+      "vars": {
+        "template": {
+          "name": "variants",
+          "vars": []
+        }
+      }
+    },
+    {
+      "id": "b_5wc6ub6",
+      "name": "three-poster-campaign v2",
+      "width": 1080.0,
+      "height": 1440.0,
+      "visible": true,
+      "layers": [
+        "t_5wckc82-0",
+        "t_5wckc82-1",
+        "t_5wckc82-2",
+        "t_5wckc82-3"
+      ],
+      "ratio": "1080:1440",
+      "vars": {
+        "template": {
+          "name": "variants",
+          "vars": []
+        }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "te_5wawf8m",
+      "type": "text",
+      "name": "title",
+      "artboard": "b1",
+      "box": {
+        "x": 356.0,
+        "y": 120.0,
+        "w": 368.0,
+        "h": 124.2
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin": 120.0
+        },
+        "provenance": [
+          "hug.w=368",
+          "hug.h=124.2",
+          "anchor=top"
+        ]
+      },
+      "text": {
+        "content": "新品首发",
+        "size": 92.0,
+        "weight": 400,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "新品首发"
+        ]
+      }
+    },
+    {
+      "id": "im_5v99y5i",
+      "type": "image",
+      "name": "product",
+      "artboard": "b1",
+      "box": {
+        "x": 190.0,
+        "y": 253.33,
+        "w": 700.0,
+        "h": 933.33
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "b1",
+          "keep_aspect_ratio": true
+        },
+        "provenance": [
+          "aspect=0.75",
+          "center_in=b1"
+        ]
+      },
+      "image": {
+        "asset": "as_5wattpy",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "re_5wb5eeu",
+      "type": "rect",
+      "name": "price",
+      "artboard": "b1",
+      "box": {
+        "x": 400.0,
+        "y": 1216.0,
+        "w": 280.0,
+        "h": 104.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "bottom",
+          "margin": 120.0,
+          "align_x": "center"
+        },
+        "provenance": [
+          "anchor=bottom",
+          "align_x=Center"
+        ]
+      },
+      "style": {
+        "fill": {
+          "t": "solid",
+          "color": "#D95748"
+        },
+        "radius": {
+          "all": 26.0
+        }
+      }
+    },
+    {
+      "id": "te_5wbixbq",
+      "type": "text",
+      "name": "price_label",
+      "artboard": "b1",
+      "box": {
+        "x": 484.11,
+        "y": 688.95,
+        "w": 111.79,
+        "h": 62.1
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "price"
+        },
+        "provenance": [
+          "hug.w=111.79",
+          "hug.h=62.1",
+          "center_in=price"
+        ]
+      },
+      "text": {
+        "content": "¥ 299",
+        "size": 46.0,
+        "weight": 400,
+        "color": "#FFFFFF",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "¥ 299"
+        ]
+      }
+    },
+    {
+      "id": "t_5v92gwm-0",
+      "type": "text",
+      "name": "title",
+      "artboard": "b_5waoxzq",
+      "box": {
+        "x": 356.0,
+        "y": 120.0,
+        "w": 368.0,
+        "h": 124.2
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin": 120.0
+        },
+        "provenance": [
+          "hug.w=368",
+          "hug.h=124.2",
+          "anchor=top"
+        ]
+      },
+      "text": {
+        "content": "新品首发",
+        "size": 92.0,
+        "weight": 400,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "新品首发"
+        ]
+      }
+    },
+    {
+      "id": "t_5v92gwm-1",
+      "type": "image",
+      "name": "product",
+      "artboard": "b_5waoxzq",
+      "box": {
+        "x": 190.0,
+        "y": 253.33,
+        "w": 700.0,
+        "h": 933.33
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "b1",
+          "keep_aspect_ratio": true
+        },
+        "provenance": [
+          "aspect=0.75",
+          "center_in=b1"
+        ]
+      },
+      "image": {
+        "asset": "as_5wattpy",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "t_5v92gwm-2",
+      "type": "rect",
+      "name": "price",
+      "artboard": "b_5waoxzq",
+      "box": {
+        "x": 400.0,
+        "y": 1216.0,
+        "w": 280.0,
+        "h": 104.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "bottom",
+          "margin": 120.0,
+          "align_x": "center"
+        },
+        "provenance": [
+          "anchor=bottom",
+          "align_x=Center"
+        ]
+      },
+      "style": {
+        "fill": {
+          "t": "solid",
+          "color": "#D95748"
+        },
+        "radius": {
+          "all": 26.0
+        }
+      }
+    },
+    {
+      "id": "t_5v92gwm-3",
+      "type": "text",
+      "name": "price_label",
+      "artboard": "b_5waoxzq",
+      "box": {
+        "x": 484.11,
+        "y": 688.95,
+        "w": 111.79,
+        "h": 62.1
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "price"
+        },
+        "provenance": [
+          "hug.w=111.79",
+          "hug.h=62.1",
+          "center_in=price"
+        ]
+      },
+      "text": {
+        "content": "¥ 299",
+        "size": 46.0,
+        "weight": 400,
+        "color": "#FFFFFF",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "¥ 299"
+        ]
+      }
+    },
+    {
+      "id": "t_5wbbe2u-0",
+      "type": "text",
+      "name": "title",
+      "artboard": "b_5wbxv5y",
+      "box": {
+        "x": 356.0,
+        "y": 120.0,
+        "w": 368.0,
+        "h": 124.2
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin": 120.0
+        },
+        "provenance": [
+          "hug.w=368",
+          "hug.h=124.2",
+          "anchor=top"
+        ]
+      },
+      "text": {
+        "content": "新品首发",
+        "size": 92.0,
+        "weight": 400,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "新品首发"
+        ]
+      }
+    },
+    {
+      "id": "t_5wbbe2u-1",
+      "type": "image",
+      "name": "product",
+      "artboard": "b_5wbxv5y",
+      "box": {
+        "x": 190.0,
+        "y": 253.33,
+        "w": 700.0,
+        "h": 933.33
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "b1",
+          "keep_aspect_ratio": true
+        },
+        "provenance": [
+          "aspect=0.75",
+          "center_in=b1"
+        ]
+      },
+      "image": {
+        "asset": "as_5wattpy",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "t_5wbbe2u-2",
+      "type": "rect",
+      "name": "price",
+      "artboard": "b_5wbxv5y",
+      "box": {
+        "x": 400.0,
+        "y": 1216.0,
+        "w": 280.0,
+        "h": 104.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "bottom",
+          "margin": 120.0,
+          "align_x": "center"
+        },
+        "provenance": [
+          "anchor=bottom",
+          "align_x=Center"
+        ]
+      },
+      "style": {
+        "fill": {
+          "t": "solid",
+          "color": "#D95748"
+        },
+        "radius": {
+          "all": 26.0
+        }
+      }
+    },
+    {
+      "id": "t_5wbbe2u-3",
+      "type": "text",
+      "name": "price_label",
+      "artboard": "b_5wbxv5y",
+      "box": {
+        "x": 484.11,
+        "y": 688.95,
+        "w": 111.79,
+        "h": 62.1
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "price"
+        },
+        "provenance": [
+          "hug.w=111.79",
+          "hug.h=62.1",
+          "center_in=price"
+        ]
+      },
+      "text": {
+        "content": "¥ 299",
+        "size": 46.0,
+        "weight": 400,
+        "color": "#FFFFFF",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "¥ 299"
+        ]
+      }
+    },
+    {
+      "id": "t_5wckc82-0",
+      "type": "text",
+      "name": "title",
+      "artboard": "b_5wc6ub6",
+      "box": {
+        "x": 356.0,
+        "y": 120.0,
+        "w": 368.0,
+        "h": 124.2
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin": 120.0
+        },
+        "provenance": [
+          "hug.w=368",
+          "hug.h=124.2",
+          "anchor=top"
+        ]
+      },
+      "text": {
+        "content": "新品首发",
+        "size": 92.0,
+        "weight": 400,
+        "color": "#1C1C1C",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "新品首发"
+        ]
+      }
+    },
+    {
+      "id": "t_5wckc82-1",
+      "type": "image",
+      "name": "product",
+      "artboard": "b_5wc6ub6",
+      "box": {
+        "x": 190.0,
+        "y": 253.33,
+        "w": 700.0,
+        "h": 933.33
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "b1",
+          "keep_aspect_ratio": true
+        },
+        "provenance": [
+          "aspect=0.75",
+          "center_in=b1"
+        ]
+      },
+      "image": {
+        "asset": "as_5wattpy",
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "t_5wckc82-2",
+      "type": "rect",
+      "name": "price",
+      "artboard": "b_5wc6ub6",
+      "box": {
+        "x": 400.0,
+        "y": 1216.0,
+        "w": 280.0,
+        "h": 104.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "bottom",
+          "margin": 120.0,
+          "align_x": "center"
+        },
+        "provenance": [
+          "anchor=bottom",
+          "align_x=Center"
+        ]
+      },
+      "style": {
+        "fill": {
+          "t": "solid",
+          "color": "#D95748"
+        },
+        "radius": {
+          "all": 26.0
+        }
+      }
+    },
+    {
+      "id": "t_5wckc82-3",
+      "type": "text",
+      "name": "price_label",
+      "artboard": "b_5wc6ub6",
+      "box": {
+        "x": 484.11,
+        "y": 688.95,
+        "w": 111.79,
+        "h": 62.1
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "center_in": "price"
+        },
+        "provenance": [
+          "hug.w=111.79",
+          "hug.h=62.1",
+          "center_in=price"
+        ]
+      },
+      "text": {
+        "content": "¥ 299",
+        "size": 46.0,
+        "weight": 400,
+        "color": "#FFFFFF",
+        "line_ratio": 1.35,
+        "letter_spacing": 0.0,
+        "align": "left",
+        "valign": "top",
+        "box_mode": "auto-height",
+        "overflow": "shrink",
+        "lines": [
+          "¥ 299"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "created_at": "2026-10-11 10:33",
+    "updated_at": "2026-10-11 10:33",
+    "origin": "cli"
+  }
+}

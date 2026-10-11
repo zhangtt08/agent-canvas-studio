@@ -1,0 +1,221 @@
+/* ==================================================================== tokens
+   The single source of visual truth. Everything below is referenced by
+   glass.css / layout.css / components.css — no component hard-codes a colour
+   or a duration that is not in this list. */
+
+:root {
+  /* -- brand ramp ---------------------------------------------------- */
+  --blue: #4b6bfb;
+  --blue-deep: #2f4ae0;
+  --violet: #8b5cf6;
+  --coral: #ff7a59;
+  --mint: #22d3ee;
+  --grad: linear-gradient(120deg, var(--blue) 0%, var(--violet) 100%);
+  --grad-soft: linear-gradient(120deg, rgba(75, 107, 251, 0.16), rgba(139, 92, 246, 0.14));
+
+  /* -- surface ------------------------------------------------------- */
+  --base: #f6f7fb;
+  --ink: #171d3f;
+
+  /* -- text ---------------------------------------------------------- */
+  --t1: #171d3f;
+  --t2: #5a618a;
+  --t3: #8f96bd;
+  --line: rgba(23, 29, 63, 0.08);
+  --line-2: rgba(23, 29, 63, 0.14);
+
+  /* -- semantic ------------------------------------------------------ */
+  --ok: #16a34a;
+  --warn: #d97706;
+  --err: #e11d48;
+  --info: var(--blue);
+
+  /* -- glass material ------------------------------------------------- */
+  --g-blur: blur(28px) saturate(180%);
+  --g-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.3));
+  --g-border: rgba(255, 255, 255, 0.55);
+  --g-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 20px 48px -18px rgba(23, 29, 63, 0.35);
+
+  --g-blur-1: blur(20px) saturate(170%);
+  --g-blur-3: blur(44px) saturate(190%);
+  --g-bg-1: linear-gradient(135deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.42));
+  --g-bg-3: linear-gradient(150deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.5));
+  --g-shadow-3:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.3) inset,
+    0 40px 90px -26px rgba(23, 29, 63, 0.45),
+    0 2px 10px -4px rgba(23, 29, 63, 0.18);
+
+  /* -- radii ---------------------------------------------------------- */
+  --r-xs: 8px;
+  --r-sm: 11px;
+  --r-md: 16px;
+  --r-lg: 20px;
+  --r-xl: 24px; /* rounded-3xl */
+  --r-2xl: 30px;
+  --r-pill: 999px;
+  --r-win: 18px;
+
+  /* -- motion ---------------------------------------------------------- */
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --d1: 120ms;
+  --d2: 180ms;
+  --d3: 260ms;
+  --d-sheet: 320ms;
+
+  /* -- metrics ---------------------------------------------------------- */
+  --rail-w: 68px;
+  --panel-l: 268px;
+  --panel-r: 336px;
+  --tb-h: 46px;
+  --ring: 6px;
+  --font:
+    -apple-system, 'Segoe UI', Inter, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei UI', 'Microsoft YaHei', sans-serif;
+  --mono: 'SFMono-Regular', 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
+
+  color-scheme: light;
+}
+
+/* ================================================================== reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--t1);
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+code,
+.mono {
+  font-family: var(--mono);
+  font-variant-ligatures: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* ================================================================= type */
+.display {
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+}
+
+.h1 {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.t2 {
+  color: var(--t2);
+}
+.t3 {
+  color: var(--t3);
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scrollbars are part of the material: thin, translucent, no OS chrome. */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 29, 63, 0.18);
+  border-radius: var(--r-pill);
+  border: 3.5px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(23, 29, 63, 0.32);
+  background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::selection {
+  background: rgba(75, 107, 251, 0.24);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

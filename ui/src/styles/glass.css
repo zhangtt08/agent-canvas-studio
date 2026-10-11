@@ -1,0 +1,381 @@
+/* ================================================================== glass
+   The material. It only reads as glass when (a) there is something to blur
+   behind it and (b) it has a specular highlight that reacts to the pointer.
+   Both are provided here: `.bg-field` paints the drifting colour orbs,
+   `.glass` blurs them, `[data-sheen]` lights them. */
+
+/* ---------------------------------------------------- the thing being blurred */
+.bg-field {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  background: var(--base);
+  pointer-events: none;
+}
+
+.bg-field i {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  filter: blur(0px);
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 62vw;
+  height: 62vw;
+  left: -14vw;
+  top: -22vw;
+  background: radial-gradient(circle at 50% 50%, rgba(75, 107, 251, 0.58), rgba(75, 107, 251, 0) 66%);
+  animation: drift-a 40s var(--ease) infinite alternate;
+}
+.orb-2 {
+  width: 54vw;
+  height: 54vw;
+  right: -12vw;
+  top: -16vw;
+  background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.5), rgba(139, 92, 246, 0) 66%);
+  animation: drift-b 40s var(--ease) infinite alternate;
+}
+.orb-3 {
+  width: 48vw;
+  height: 48vw;
+  right: -8vw;
+  bottom: -20vw;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 122, 89, 0.44), rgba(255, 122, 89, 0) 66%);
+  animation: drift-c 40s var(--ease) infinite alternate;
+}
+.orb-4 {
+  width: 44vw;
+  height: 44vw;
+  left: 6vw;
+  bottom: -18vw;
+  background: radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.42), rgba(34, 211, 238, 0) 66%);
+  animation: drift-d 40s var(--ease) infinite alternate;
+}
+
+@keyframes drift-a {
+  to {
+    transform: translate3d(9vw, 7vw, 0) scale(1.12);
+  }
+}
+@keyframes drift-b {
+  to {
+    transform: translate3d(-8vw, 10vw, 0) scale(1.06);
+  }
+}
+@keyframes drift-c {
+  to {
+    transform: translate3d(-11vw, -8vw, 0) scale(1.14);
+  }
+}
+@keyframes drift-d {
+  to {
+    transform: translate3d(10vw, -6vw, 0) scale(1.05);
+  }
+}
+
+/* Grain: without it the glass looks airbrushed. */
+.bg-noise {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* --------------------------------------------------------------- the layer */
+.sheen-root {
+  position: relative;
+  isolation: isolate;
+}
+
+/* one pointermove at the root writes --mx/--my; every glass surface reads them */
+[data-sheen] {
+  --mx: 50%;
+  --my: 50%;
+}
+[data-sheen]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--d2) var(--ease);
+  background: radial-gradient(
+    220px circle at var(--mx) var(--my),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.14) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  mix-blend-mode: soft-light;
+}
+[data-sheen]:hover::after {
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------- glass core */
+.glass {
+  position: relative;
+  background-image: var(--g-bg);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--g-border);
+  box-shadow: var(--g-shadow);
+  backdrop-filter: var(--g-blur);
+  -webkit-backdrop-filter: var(--g-blur);
+  border-radius: var(--r-lg);
+  isolation: isolate;
+}
+
+/* 1 = bar / rail, 2 = panel / card, 3 = floating sheet */
+.glass-1 {
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.34));
+  backdrop-filter: var(--g-blur-1);
+  -webkit-backdrop-filter: var(--g-blur-1);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.72) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.2) inset,
+    0 10px 26px -16px rgba(23, 29, 63, 0.3);
+}
+.glass-2 {
+  background-image: var(--g-bg-1);
+  backdrop-filter: var(--g-blur);
+  -webkit-backdrop-filter: var(--g-blur);
+}
+.glass-3 {
+  background-image: var(--g-bg-3);
+  border-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: var(--g-blur-3);
+  -webkit-backdrop-filter: var(--g-blur-3);
+  box-shadow: var(--g-shadow-3);
+}
+
+/* the canvas well: glass turned dark so artwork reads on top of it */
+.glass-dark {
+  background-image: linear-gradient(150deg, rgba(23, 29, 63, 0.6), rgba(23, 29, 63, 0.34));
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.28) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 24px 60px -24px rgba(10, 14, 40, 0.6);
+  backdrop-filter: blur(34px) saturate(160%);
+  -webkit-backdrop-filter: blur(34px) saturate(160%);
+}
+
+.glass-inset {
+  background-image: linear-gradient(150deg, rgba(23, 29, 63, 0.05), rgba(23, 29, 63, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px) saturate(140%);
+  -webkit-backdrop-filter: blur(10px) saturate(140%);
+}
+
+/* hover lift, used by every card-ish surface */
+.lift {
+  transition:
+    transform var(--d2) var(--ease),
+    box-shadow var(--d2) var(--ease),
+    border-color var(--d2) var(--ease);
+}
+.lift:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.75) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.28) inset,
+    0 30px 60px -22px rgba(23, 29, 63, 0.42);
+}
+
+/* --------------------------------------------------------------- the slab */
+.ring {
+  position: fixed;
+  inset: 0;
+  padding: var(--ring);
+}
+
+.slab {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-radius: var(--r-win);
+  overflow: hidden;
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.24));
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.34) inset,
+    0 46px 92px -34px rgba(23, 29, 63, 0.5),
+    0 6px 18px -8px rgba(23, 29, 63, 0.2);
+  backdrop-filter: blur(34px) saturate(180%);
+  -webkit-backdrop-filter: blur(34px) saturate(180%);
+}
+
+/* 1px light rim, brighter at the top where the sky hits it */
+.slab::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.12) 42%, rgba(255, 255, 255, 0.42));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 40;
+}
+
+:root[data-max='1'] .ring {
+  padding: 0;
+}
+:root[data-max='1'] .slab {
+  border-radius: 0;
+}
+:root[data-max='1'] .rz {
+  display: none;
+}
+
+/* -------------------------------------------------------- resize affordance */
+.rz {
+  position: fixed;
+  z-index: 60;
+}
+.rz-n,
+.rz-s {
+  left: 0;
+  right: 0;
+  height: var(--ring);
+  cursor: ns-resize;
+}
+.rz-n {
+  top: 0;
+}
+.rz-s {
+  bottom: 0;
+}
+.rz-w,
+.rz-e {
+  top: 0;
+  bottom: 0;
+  width: var(--ring);
+  cursor: ew-resize;
+}
+.rz-w {
+  left: 0;
+}
+.rz-e {
+  right: 0;
+}
+.rz-se {
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  height: 26px;
+  cursor: nwse-resize;
+}
+.rz-se::after {
+  content: '';
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity var(--d2) var(--ease);
+  background:
+    linear-gradient(135deg, transparent 46%, rgba(23, 29, 63, 0.42) 46%, transparent 54%),
+    linear-gradient(135deg, transparent 66%, rgba(23, 29, 63, 0.42) 66%, transparent 74%);
+}
+.rz-se:hover::after,
+.slab:hover ~ .rz-se::after {
+  opacity: 1;
+}
+.rz-nw,
+.rz-ne,
+.rz-sw {
+  width: 14px;
+  height: 14px;
+}
+.rz-nw {
+  left: 0;
+  top: 0;
+  cursor: nwse-resize;
+}
+.rz-ne {
+  right: 0;
+  top: 0;
+  cursor: nesw-resize;
+}
+.rz-sw {
+  left: 0;
+  bottom: 0;
+  cursor: nesw-resize;
+}
+
+/* --------------------------------------------------------------- backdrop */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: 26px;
+  background: radial-gradient(120% 100% at 50% 0%, rgba(23, 29, 63, 0.12), rgba(23, 29, 63, 0.34));
+  backdrop-filter: blur(6px) saturate(120%);
+  -webkit-backdrop-filter: blur(6px) saturate(120%);
+  animation: scrim-in var(--d2) var(--ease);
+}
+@keyframes scrim-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* sheets spring in from below */
+.sheet {
+  position: relative;
+  width: min(var(--sheet-w, 720px), 100%);
+  max-height: min(88vh, 780px);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r-xl);
+  animation: sheet-in var(--d-sheet) var(--ease);
+  box-shadow: var(--g-shadow-3), 0 0 0 1px rgba(23, 29, 63, 0.04);
+}
+@keyframes sheet-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0) scale(0.985);
+  }
+}
+.sheet-h {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.sheet-b {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 18px 20px;
+}
+.sheet-f {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 20px 18px;
+  border-top: 1px solid var(--line);
+}

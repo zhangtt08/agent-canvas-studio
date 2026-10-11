@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-10-11T02:34:00.834Z",
+  "engine": {
+    "build": "1.0.0 windows",
+    "schema": "1.1.0",
+    "ver": "1.0.0"
+  },
+  "files": [
+    {
+      "path": "examples/batch-resize/out/1x-batch-resize 1-1.png",
+      "bytes": 473314,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1080
+      },
+      "sha": "2eebd097cedbd3c1775f66d2091566ee6c1ff295adb75cb8c4e2a1e62f6ed5aa"
+    },
+    {
+      "path": "examples/batch-resize/out/1x-batch-resize 16-9.png",
+      "bytes": 261376,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 608
+      },
+      "sha": "7f761c44f8f9e25554ab03d7b538e2d0504179da5a3274fffb22f36304b89a9d"
+    },
+    {
+      "path": "examples/batch-resize/out/1x-batch-resize 4-5.png",
+      "bytes": 519297,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1350
+      },
+      "sha": "2b53099e5b8177f05474d500169a88923351ea3258294a2dfeb1906355a655af"
+    },
+    {
+      "path": "examples/batch-resize/out/1x-batch-resize 9-16.png",
+      "bytes": 540302,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1920
+      },
+      "sha": "2275b3a0b2e5ac286d11c14f1ce535d93d4299817d951c2b602a8fd0ae20b91a"
+    },
+    {
+      "path": "examples/batch-resize/out/1x-batch-resize.png",
+      "bytes": 473314,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1080
+      },
+      "sha": "2eebd097cedbd3c1775f66d2091566ee6c1ff295adb75cb8c4e2a1e62f6ed5aa"
+    },
+    {
+      "path": "examples/batch-resize/out/web-batch-resize 1-1.jpg",
+      "bytes": 76408,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 1080,
+        "w": 1080
+      },
+      "sha": "18d669d4fcc2fd391ebab14941b515920fdb98731ad5d43107d0c4a5a82da838"
+    },
+    {
+      "path": "examples/batch-resize/out/web-batch-resize 16-9.jpg",
+      "bytes": 49598,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 608,
+        "w": 1080
+      },
+      "sha": "9570f697f47928a47798d907961de17f1653bc091113d23902a78d9bd6dc693e"
+    },
+    {
+      "path": "examples/batch-resize/out/web-batch-resize 4-5.jpg",
+      "bytes": 88469,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 1350,
+        "w": 1080
+      },
+      "sha": "5702121a496b889ac21ff479e60eed07283ae1517027f5f2fa1eea9386b1e2d2"
+    },
+    {
+      "path": "examples/batch-resize/out/web-batch-resize 9-16.jpg",
+      "bytes": 110468,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 1920,
+        "w": 1080
+      },
+      "sha": "82b31ac9467809aa6cc205d06766b8e573d1020390ef84251399aa1c95d65dc8"
+    },
+    {
+      "path": "examples/batch-resize/out/web-batch-resize.jpg",
+      "bytes": 76408,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 1080,
+        "w": 1080
+      },
+      "sha": "18d669d4fcc2fd391ebab14941b515920fdb98731ad5d43107d0c4a5a82da838"
+    },
+    {
+      "path": "examples/editorial-cover/out/editorial-cover.pdf",
+      "bytes": 5761405,
+      "dims": {
+        "fmt": "pdf"
+      }
+    },
+    {
+      "path": "examples/headless-mcp/out/headless-mcp-preview.png",
+      "bytes": 22778,
+      "dims": {
+        "fmt": "png",
+        "w": 324,
+        "h": 432
+      },
+      "sha": "7e232d39160ee78e706714c18993cf43148bd261432b17757a3e745ab4fc2ff3"
+    },
+    {
+      "path": "examples/headless-mcp/out/headless-mcp.png",
+      "bytes": 141309,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "35d5b9492f313c05dabc6d02fd965cc79b018d9d74809b35e42943efbc26a450"
+    },
+    {
+      "path": "examples/image-pipeline/out/product-a.jpg",
+      "bytes": 18127,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 800,
+        "w": 800
+      },
+      "sha": "fa0484c5fbde23954127d1e94d58bcabc20e3afc2ced3a88368dc0ec3927a7ec"
+    },
+    {
+      "path": "examples/image-pipeline/out/product-b.jpg",
+      "bytes": 18127,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 800,
+        "w": 800
+      },
+      "sha": "fa0484c5fbde23954127d1e94d58bcabc20e3afc2ced3a88368dc0ec3927a7ec"
+    },
+    {
+      "path": "examples/image-pipeline/out/product-c.jpg",
+      "bytes": 18127,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 800,
+        "w": 800
+      },
+      "sha": "fa0484c5fbde23954127d1e94d58bcabc20e3afc2ced3a88368dc0ec3927a7ec"
+    },
+    {
+      "path": "examples/image-pipeline/out/small.jpg",
+      "bytes": 59346,
+      "dims": {
+        "fmt": "jpeg",
+        "h": 960,
+        "w": 720
+      },
+      "sha": "7d936a24bb56eedb5863b12724af6dd9a6825e87be990fcecf54970d3f6a7880"
+    },
+    {
+      "path": "examples/image-pipeline/out/story.webp",
+      "bytes": 292622,
+      "dims": {
+        "fmt": "webp",
+        "w": 324,
+        "h": 576
+      },
+      "sha": "eb77fbd1c7da5ad9d232da2acfd73a5dc38712574534f924d2088924b08efb43"
+    },
+    {
+      "path": "examples/MANIFEST.json",
+      "bytes": 8404,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/product-poster/out/product-poster.png",
+      "bytes": 247690,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "94fcc4cae3af38bdf67fb840a821bdbae9248ccd20077d352773a8b4c39e7b63"
+    },
+    {
+      "path": "examples/projects/batch-resize/preview.png",
+      "bytes": 2277,
+      "dims": {
+        "fmt": "png",
+        "w": 270,
+        "h": 270
+      },
+      "sha": "46bad086c09a109afbace1b2757d81cb2a6728c9ff40dfbf3ac4b235dfc2b078"
+    },
+    {
+      "path": "examples/projects/batch-resize/project.json",
+      "bytes": 5153,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/projects/editorial-cover/preview.png",
+      "bytes": 3420,
+      "dims": {
+        "fmt": "png",
+        "w": 300,
+        "h": 400
+      },
+      "sha": "2cd4af2cdedd3ff0967900ab6888479d998a0275bb39e3d548e7de7f69348cbb"
+    },
+    {
+      "path": "examples/projects/editorial-cover/project.json",
+      "bytes": 5913,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/projects/headless-mcp/preview.png",
+      "bytes": 17912,
+      "dims": {
+        "fmt": "png",
+        "w": 270,
+        "h": 360
+      },
+      "sha": "07e8f538b22d9530bbfb36660431977e2023bad99cf93697a6d816e3c81e31de"
+    },
+    {
+      "path": "examples/projects/headless-mcp/project.json",
+      "bytes": 7751,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/projects/product-poster/preview.png",
+      "bytes": 30765,
+      "dims": {
+        "fmt": "png",
+        "w": 270,
+        "h": 360
+      },
+      "sha": "48bfbcdae66205a6c3683e042816e19de7b0c0783af7146a1763373e610d3968"
+    },
+    {
+      "path": "examples/projects/product-poster/project.json",
+      "bytes": 6020,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/projects/three-poster-campaign/preview.png",
+      "bytes": 2997,
+      "dims": {
+        "fmt": "png",
+        "w": 270,
+        "h": 360
+      },
+      "sha": "23836187d2321059b9bec75028ae042623c5bdd5922c8f2c3f1ac99363d7ee31"
+    },
+    {
+      "path": "examples/projects/three-poster-campaign/project.json",
+      "bytes": 17196,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/recents.json",
+      "bytes": 1369,
+      "dims": {
+        "fmt": "unknown"
+      }
+    },
+    {
+      "path": "examples/three-poster-campaign/out/three-poster-campaign-three-poster-campaign v0.png",
+      "bytes": 248586,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "ee54555b5b37414673938cbef31e445cae2629c68821a1bda46db78014bf8e87"
+    },
+    {
+      "path": "examples/three-poster-campaign/out/three-poster-campaign-three-poster-campaign v1.png",
+      "bytes": 248586,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "ee54555b5b37414673938cbef31e445cae2629c68821a1bda46db78014bf8e87"
+    },
+    {
+      "path": "examples/three-poster-campaign/out/three-poster-campaign-three-poster-campaign v2.png",
+      "bytes": 248586,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "ee54555b5b37414673938cbef31e445cae2629c68821a1bda46db78014bf8e87"
+    },
+    {
+      "path": "examples/three-poster-campaign/out/three-poster-campaign-three-poster-campaign.png",
+      "bytes": 248586,
+      "dims": {
+        "fmt": "png",
+        "w": 1080,
+        "h": 1440
+      },
+      "sha": "ee54555b5b37414673938cbef31e445cae2629c68821a1bda46db78014bf8e87"
+    }
+  ]
+}

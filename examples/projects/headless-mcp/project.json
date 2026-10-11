@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.1.0",
+  "project_id": "headless-mcp",
+  "revision": 1,
+  "name": "headless-mcp",
+  "tokens": {
+    "colors": [
+      {
+        "name": "accent",
+        "value": "rgb(255,90,95)"
+      },
+      {
+        "name": "ink",
+        "value": "rgb(16,19,24)"
+      },
+      {
+        "name": "paper",
+        "value": "rgb(255,255,255)"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "id": "as_5wax5iu",
+      "name": "product-c",
+      "uri": "assets/d3b72f08.png",
+      "mime": "image/png",
+      "width": 720.0,
+      "height": 960.0,
+      "bytes": 67125,
+      "sha256": "d3b72f08de6e3d894a29c703266b192e7b31f9f9b3b8e9e59037d31645e74573",
+      "alpha": false,
+      "kind": "raster",
+      "source": "copy",
+      "palette": [
+        "#f3f1ed",
+        "#14c8c7",
+        "#1e2d3b",
+        "#254873",
+        "#3e908b",
+        "#bdd9d2"
+      ],
+      "orientation": "portrait"
+    }
+  ],
+  "artboards": [
+    {
+      "id": "b_5wabofq",
+      "name": "headless-mcp",
+      "width": 1080.0,
+      "height": 1440.0,
+      "background": {
+        "t": "solid",
+        "color": "rgb(16,19,24)"
+      },
+      "visible": true,
+      "layers": [
+        "t_5wb63o2-0",
+        "t_5wb63o2-1",
+        "t_5wb63o2-2",
+        "t_5wb63o2-3",
+        "t_5wb63o2-4"
+      ],
+      "safe_margin": 72.0,
+      "ratio": "3:4",
+      "vars": {
+        "template": {
+          "name": "poster_kv",
+          "vars": [
+            {
+              "key": "title",
+              "keypath": "text.content",
+              "kind": "text",
+              "node": "t_5wb63o2-1"
+            },
+            {
+              "key": "subtitle",
+              "keypath": "text.content",
+              "kind": "text",
+              "node": "t_5wb63o2-2"
+            },
+            {
+              "key": "image",
+              "keypath": "image.asset",
+              "kind": "image",
+              "node": "t_5wb63o2-0"
+            },
+            {
+              "key": "accent",
+              "keypath": "style.fill.color",
+              "kind": "color",
+              "node": "t_5wb63o2-3"
+            },
+            {
+              "key": "logo",
+              "keypath": "text.content",
+              "kind": "text",
+              "node": "t_5wb63o2-4"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "t_5wb63o2-0",
+      "type": "image",
+      "name": "hero",
+      "artboard": "b_5wabofq",
+      "box": {
+        "x": 205.2,
+        "y": 273.6,
+        "w": 669.6,
+        "h": 576.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "z_role": "content",
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "center",
+          "below": {
+            "of": "t_5wb63o2-1",
+            "gap": 24.0,
+            "cross": "center"
+          },
+          "size": {
+            "w_ref": 0.62,
+            "h_ref": 0.4
+          }
+        },
+        "provenance": [
+          "size.w_ref=0.62",
+          "size.h_ref=0.4",
+          "aspect=0.75",
+          "anchor=center",
+          "below:t_5wb63o2-1+24",
+          "safe_margin=72"
+        ]
+      },
+      "image": {
+        "asset": "as_5wax5iu",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "t_5wb63o2-1",
+      "type": "text",
+      "name": "headline",
+      "artboard": "b_5wabofq",
+      "box": {
+        "x": 75.6,
+        "y": 120.0,
+        "w": 928.8,
+        "h": 129.6
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "z_role": "content",
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "top",
+          "margin_top": 120.0,
+          "size": {
+            "w_ref": 0.86,
+            "min_h": 120.0
+          }
+        },
+        "provenance": [
+          "size.w_ref=0.86",
+          "hug.h=129.6",
+          "anchor=top",
+          "safe_margin=72"
+        ]
+      },
+      "text": {
+        "content": "无界面也能出片",
+        "size": 96.0,
+        "color": "rgb(255,255,255)",
+        "line_ratio": 1.2,
+        "align": "left",
+        "overflow": "shrink",
+        "lines": [
+          "无界面也能出片"
+        ]
+      }
+    },
+    {
+      "id": "t_5wb63o2-2",
+      "type": "text",
+      "name": "subtitle",
+      "artboard": "b_5wabofq",
+      "box": {
+        "x": 75.6,
+        "y": 265.6,
+        "w": 864.0,
+        "h": 52.07
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "z_role": "label",
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "below": {
+            "of": "t_5wb63o2-1",
+            "gap": 16.0
+          },
+          "align_to": {
+            "of": "t_5wb63o2-1",
+            "edge": "left"
+          },
+          "size": {
+            "w_ref": 0.8
+          }
+        },
+        "provenance": [
+          "size.w_ref=0.8",
+          "hug.h=52.07",
+          "below:t_5wb63o2-1+16",
+          "align_to:t_5wb63o2-1:left",
+          "safe_margin=72"
+        ]
+      },
+      "text": {
+        "content": "HEADLESS",
+        "size": 38.57,
+        "color": "rgb(199,205,219)",
+        "line_ratio": 1.4,
+        "align": "left",
+        "overflow": "shrink",
+        "lines": [
+          "HEADLESS"
+        ]
+      }
+    },
+    {
+      "id": "t_5wb63o2-3",
+      "type": "rect",
+      "name": "brandbar",
+      "artboard": "b_5wabofq",
+      "box": {
+        "x": 72.0,
+        "y": 1316.87,
+        "w": 72.0,
+        "h": 10.0
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "z_role": "decor",
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "left_of": {
+            "of": "t_5wb63o2-4",
+            "gap": 16.0,
+            "cross": "middle"
+          },
+          "size": {
+            "w": 72.0,
+            "h": 10.0
+          }
+        },
+        "provenance": [
+          "size.w=72",
+          "size.h=10",
+          "left_of:t_5wb63o2-4",
+          "safe_margin=72"
+        ]
+      },
+      "style": {
+        "fill": {
+          "t": "solid",
+          "color": "#3B4BFB"
+        },
+        "radius": {
+          "all": 6.0
+        }
+      }
+    },
+    {
+      "id": "t_5wb63o2-4",
+      "type": "text",
+      "name": "brand",
+      "artboard": "b_5wabofq",
+      "box": {
+        "x": 86.0,
+        "y": 1299.73,
+        "w": 420.0,
+        "h": 44.27
+      },
+      "rotation": 0.0,
+      "origin": "center",
+      "flip_x": false,
+      "flip_y": false,
+      "visible": true,
+      "locked": false,
+      "opacity": 1.0,
+      "z_role": "label",
+      "layout": {
+        "mode": "constraint",
+        "intent": {
+          "anchor": "bottom-left",
+          "margin_bottom": 96.0,
+          "margin_left": 86.0,
+          "size": {
+            "w": 420.0,
+            "min_h": 44.0
+          }
+        },
+        "provenance": [
+          "size.w=420",
+          "hug.h=44.27",
+          "anchor=bottom-left",
+          "safe_margin=72"
+        ]
+      },
+      "text": {
+        "content": "yourbrand",
+        "size": 32.79,
+        "color": "rgb(255,255,255)",
+        "line_ratio": 1.4,
+        "align": "left",
+        "overflow": "shrink",
+        "lines": [
+          "yourbrand"
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "created_at": "2026-10-11 10:34",
+    "updated_at": "2026-10-11 10:34",
+    "origin": "poster"
+  }
+}
