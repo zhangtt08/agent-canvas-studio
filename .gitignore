@@ -33,3 +33,5 @@ Desktop.ini
 !dist/bin/
 !dist/bin/*.exe
 
+
+*.exe
